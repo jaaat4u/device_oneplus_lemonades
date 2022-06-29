@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonades device
 $(call inherit-product, device/oneplus/lemonades/device.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Awaken stuff.
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_lemonades
+PRODUCT_NAME := awaken_lemonades
 PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -45,3 +45,10 @@ BUILD_FINGERPRINT := oplus/ossi/ossi:12/SKQ1.211006.001/1647272062518:user/relea
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=oplus/ossi/ossi:12/SKQ1.211006.001/1647272062518:user/release-keys
+
+# Awaken Stuff
+TARGET_SUPPORTS_QUICK_TAP := true
+USE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true

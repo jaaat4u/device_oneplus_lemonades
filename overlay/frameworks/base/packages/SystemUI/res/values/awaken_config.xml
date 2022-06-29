@@ -36,7 +36,7 @@
             0 - GLOBAL HBM
             1 - LOCAL HBM
     -->
-    <integer name="config_udfps_hbm_type">0</integer>
+    <integer name="config_udfpsHbmType">0</integer>
 
     <!-- Location on the screen of the center of the Physical Power Button. -->
     <dimen name="physical_power_button_center_screen_location_y">900px</dimen>
