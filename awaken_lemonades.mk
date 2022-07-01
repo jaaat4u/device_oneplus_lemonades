@@ -47,6 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=oplus/ossi/ossi:12/SKQ1.211006.001/1647272062518:user/release-keys
 
 # Awaken Stuff
+AWAKEN_BUILD_TYPE := OFFICIAL
 TARGET_SUPPORTS_QUICK_TAP := true
 USE_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
