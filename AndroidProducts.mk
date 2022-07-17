@@ -15,10 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_lemonades.mk
+    $(LOCAL_DIR)/arrow_lemonades.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_lemonades-user \
-    awaken_lemonades-userdebug \
-    awaken_lemonades-eng
-
+    arrow_lemonades-userdebug \
