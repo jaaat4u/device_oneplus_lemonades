@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lemonades device
 $(call inherit-product, device/oneplus/lemonades/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_lemonades
+PRODUCT_NAME := derp_lemonades
 PRODUCT_DEVICE := lemonades
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -31,3 +31,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
 BUILD_FINGERPRINT := OnePlus/OnePlus9R_IND/OnePlus9R:13/RKQ1.211119.001/R.eea0db-2-1:user/release-keys
+
+# Specify DerpFest specific Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+BUILD_USERNAME := jaat4u
+BUILD_HOSTNAME := ArchLinux
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_USES_BLUR := true
+EXTRA_UDFPS_ANIMATIONS := false
